@@ -1,0 +1,79 @@
+1 Git clone
+
+Git clone is a command for downloading existing source code from a remote repository (like Github, for example). In other words, Git clone basically makes an identical copy of the latest version of a project in a repository and saves it to your computer.
+
+There are a couple of ways to download the source code, but mostly I prefer the clone with https way:
+
+git clone <https://name-of-the-repository-link>
+
+For example, if we want to download a project from Github, all we need to do is click on the green button (clone or download), copy the URL in the box and paste it after the git clone command that I've shown right above.
+resim-4
+Bootstrap source code example from Github
+
+This will make a copy of the project to your local workspace so you can start working with it.
+2. Git branch
+
+Branches are highly important in the git world. By using branches, several developers are able to work in parallel on the same project simultaneously. We can use the git branch command for creating, listing and deleting branches.
+
+Creating a new branch:
+
+git branch <branch-name>
+
+This command will create a branch locally. To push the new branch into the remote repository, you need to use the following command:
+
+git push -u <remote> <branch-name>
+
+Viewing branches:
+
+git branch or git branch --list
+
+Deleting a branch:
+
+git branch -d <branch-name>
+
+
+3. Git status
+
+The Git status command gives us all the necessary information about the current branch. 
+
+git status
+
+We can gather information like:
+
+    Whether the current branch is up to date
+    Whether there is anything to commit, push or pull
+    Whether there are files staged, unstaged or untracked
+    Whether there are files created, modified or deleted
+
+resim-5
+Git status gives information about the branch & files
+4. Git add
+
+When we create, modify or delete a file, these changes will happen in our local and won't be included in the next commit (unless we change the configurations).
+
+We need to use the git add command to include the changes of a file(s) into our next commit. 
+
+To add a single file:
+
+git add <file>
+
+To add everything at once:
+
+git add -A
+
+When you visit the screenshot above in the 4th section, you will see that there are file names that are red - this means that they're unstaged files. The unstaged files won't be included in your commits.
+
+To include them, we need to use git add:
+resim-6
+Files with green are now staged with git add
+
+Important: The git add command doesn't change the repository and the changes are not saved until we use git commit.
+5. Git commit
+
+This is maybe the most-used command of Git. Once we reach a certain point in development, we want to save our changes (maybe after a specific task or issue).
+
+Git commit is like setting a checkpoint in the development process which you can go back to later if needed.
+
+We also need to write a short message to explain what we have developed or changed in the source code.
+
+git commit -m "commit message"
