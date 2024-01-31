@@ -76,4 +76,12 @@ Git commit is like setting a checkpoint in the development process which you can
 
 We also need to write a short message to explain what we have developed or changed in the source code.
 
-git commit -m "commit message"
+it commit -m "commit message"
+
+
+
+
+
+SUMMARY :
+
+In todays lecture we learned to use the one of the most used devops git .we saw various git commands like config push pull commit branch ,etc .this commands of github help us to work on various projects and enable to track changes.
